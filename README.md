@@ -14,6 +14,21 @@ dragging the folder onto Netlify.
   zone (app.netlify.com → *Add new site* → *Deploy manually*). No build command,
   no settings to configure — it's a flat static folder.
 
+### Preview on GitHub Pages (one-time setup)
+
+GitHub Pages must be turned on once by the repo owner (the GitHub token can't
+enable it automatically). Then it auto-updates on every push:
+
+1. Repo → **Settings** → **Pages**.
+2. **Build and deployment → Source:** choose **Deploy from a branch**.
+3. **Branch:** pick `claude/aquacraft-plumbing-site-7kb6ma`, folder **/ (root)**,
+   then **Save**.
+4. Wait ~1 minute. The site goes live at:
+   **https://mathias1-creator.github.io/AQUACRAFTPLUMBING/**
+
+(The `.nojekyll` file makes Pages serve the files exactly as-is. All links are
+relative, so the site works correctly under the `/AQUACRAFTPLUMBING/` subpath.)
+
 ---
 
 ## Files
