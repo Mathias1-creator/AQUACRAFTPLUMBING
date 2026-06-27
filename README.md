@@ -126,10 +126,9 @@ grep -rl 'EXAMPLE-DOMAIN.com' . | xargs sed -i '' 's/EXAMPLE-DOMAIN\.com/yourdom
 - **Star glyphs** in the rating/reviews are shown in a conventional review
   **gold** (`#F4B400`). This is the only off-palette color and is used only for
   star icons, since gold stars are the universally understood rating convention.
-- **Google reviews link** points to a Google search for the business
-  (`google.com/search?q=Aquacraft+Plumbing+Inc+reviews`) because no direct Google
-  Business profile URL was provided. Swap it for the direct profile/reviews URL
-  when you have it (it's marked with a comment in `index.html` and `contact.html`).
+- **Google reviews link** opens the business's Google reviews panel directly
+  (the `#lrd=…` fragment on the Google results URL is what pops the reviews
+  dialog). It's used in the footer of every page and on the contact page.
 - **First names only** are shown on testimonials (e.g. "Sonya — Google review"),
   using the four real reviews verbatim. No reviews were invented.
 - **No photos/gallery.** All imagery is the logo plus CSS gradients and inline
