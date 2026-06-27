@@ -77,6 +77,16 @@ looks great in every spot:
 
 ---
 
+## Photos
+
+The site has two image areas that are **photo-ready**: a "quality workmanship"
+band on the Home page and an image panel on the About page. Until photos are
+added they show a clean branded gradient (never a broken image). To add real
+photos, drop royalty-free files into the **`images/`** folder named
+`images/work.jpg` (Home, landscape) and `images/about.jpg` (About, portrait) —
+see `images/README.txt` for sizes and free sources. They're picked up
+automatically, no code changes.
+
 ## Swapping in your real domain (1 place to change)
 
 Everything uses the placeholder **`EXAMPLE-DOMAIN.com`**. Once you have your real

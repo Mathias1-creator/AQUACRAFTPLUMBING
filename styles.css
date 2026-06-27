@@ -613,3 +613,59 @@ a:hover { color: var(--red); }
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
 }
+
+/* ===========================================================
+   Photo sections (graceful: show a branded gradient if the
+   image file isn't present yet — never a broken-image icon)
+   =========================================================== */
+
+/* Dark image band with heavy brand overlay */
+.photo-band {
+  position: relative;
+  background-color: var(--navy-900);
+  background-image:
+    linear-gradient(135deg, rgba(15,24,48,.88) 0%, rgba(20,34,60,.74) 100%),
+    url("images/work.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #eaf1fb;
+  text-align: center;
+}
+.photo-band h2 { color: #fff; }
+.photo-band p  { color: #c6d3e8; }
+.photo-band .cta-actions { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+.photo-band .btn-primary { background: #fff; color: var(--navy); }
+.photo-band .btn-primary:hover, .photo-band .btn-primary:focus-visible { background: var(--red); color: #fff; }
+.photo-band .btn-ghost { color: #fff; border-color: rgba(255,255,255,.6); }
+.photo-band .btn-ghost:hover, .photo-band .btn-ghost:focus-visible { background: #fff; color: var(--navy); border-color: #fff; }
+
+/* About story: text + image, two columns on desktop */
+.story-grid { display: grid; gap: 30px; align-items: center; }
+@media (min-width: 820px) {
+  .story-grid { grid-template-columns: 1.05fr .95fr; gap: 46px; }
+}
+.story-img {
+  position: relative;
+  min-height: 340px;
+  border-radius: var(--radius-lg);
+  background-color: var(--navy);
+  background-image:
+    linear-gradient(150deg, rgba(27,42,74,.22), rgba(59,143,212,.24)),
+    url("images/about.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+.story-img .badge {
+  position: absolute;
+  left: 18px; bottom: 18px;
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,.96);
+  border-radius: 12px;
+  padding: 10px 14px;
+  box-shadow: var(--shadow-md);
+  font-weight: 700; color: var(--navy); font-size: .92rem;
+}
+.story-img .badge .stars { color: var(--gold); letter-spacing: 1px; }
