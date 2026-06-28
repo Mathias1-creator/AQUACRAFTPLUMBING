@@ -590,7 +590,7 @@ a:hover { color: var(--red); }
   .contact-grid { grid-template-columns: repeat(2, 1fr); }
   .info-grid { grid-template-columns: repeat(3, 1fr); }
   .cred-grid { grid-template-columns: repeat(2, 1fr); }
-  .svc-row { grid-template-columns: 64px 1fr; align-items: start; }
+  .svc-row { grid-template-columns: 1fr; }
   .callout { flex-direction: row; align-items: center; justify-content: space-between; }
   .callout .callout-body { max-width: 60%; }
 }
@@ -682,3 +682,20 @@ a.rating-banner:hover, a.rating-banner:focus-visible {
   transform: translateY(-1px);
 }
 .review-cta { margin-top: 18px; margin-bottom: 0; }
+
+/* ---------- Service rows with images (services.html) ---------- */
+.svc-img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+  background: var(--off-white);
+}
+.svc-body .card-icon { margin-bottom: 12px; }
+@media (min-width: 800px) {
+  .svc-row { grid-template-columns: 360px 1fr; gap: 32px; align-items: center; }
+  .svc-row:nth-child(even) { grid-template-columns: 1fr 360px; }
+  .svc-row:nth-child(even) .svc-img { order: 2; }
+  .svc-row:nth-child(even) .svc-body { order: 1; }
+}
