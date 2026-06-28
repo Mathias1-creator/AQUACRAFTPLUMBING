@@ -699,3 +699,14 @@ a.rating-banner:hover, a.rating-banner:focus-visible {
   .svc-row:nth-child(even) .svc-img { order: 2; }
   .svc-row:nth-child(even) .svc-body { order: 1; }
 }
+
+/* About panel showing the logo on a light background (logo never on dark) */
+.story-logo {
+  background: linear-gradient(160deg, #ffffff 0%, var(--off-white) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+.story-logo-img { width: 300px; max-width: 76%; height: auto; }
+.story-logo .badge { border: 1px solid var(--line); }
