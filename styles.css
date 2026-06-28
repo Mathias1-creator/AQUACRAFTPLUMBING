@@ -447,10 +447,13 @@ a:hover { color: var(--red); }
 }
 .contact-card.call { background: linear-gradient(160deg,#fff, #f1f6fc); border: 1px solid var(--line); }
 .contact-card.text { background: linear-gradient(160deg,#fff, #eef6ff); border: 1px solid var(--line); }
+.contact-card.email { background: linear-gradient(160deg,#fff, #f5f5f5); border: 1px solid var(--line); }
 .contact-card .ci.call-i { background: rgba(224,50,42,.12); color: var(--red); }
 .contact-card .ci.text-i { background: rgba(59,143,212,.14); color: var(--blue); }
+.contact-card .ci.email-i { background: rgba(27,42,74,.1); color: var(--navy); }
 .contact-card h2 { font-size: 1.5rem; margin-bottom: .1rem; }
 .contact-card .num { font-size: clamp(1.6rem, 5vw, 2.1rem); font-weight: 800; color: var(--navy); letter-spacing: -.01em; }
+.contact-card .email-addr { font-size: clamp(.85rem, 2.5vw, 1rem); font-weight: 700; color: var(--navy); word-break: break-all; }
 .contact-card p { margin: 0; }
 .contact-card .btn { margin-top: 12px; }
 
@@ -590,7 +593,7 @@ a:hover { color: var(--red); }
   .area-grid { grid-template-columns: repeat(3, 1fr); }
   .feature-grid { grid-template-columns: repeat(2, 1fr); }
   .quote-grid { grid-template-columns: repeat(2, 1fr); }
-  .contact-grid { grid-template-columns: repeat(2, 1fr); }
+  .contact-grid { grid-template-columns: repeat(3, 1fr); }
   .info-grid { grid-template-columns: repeat(3, 1fr); }
   .cred-grid { grid-template-columns: repeat(2, 1fr); }
   .svc-row { grid-template-columns: 1fr; }
