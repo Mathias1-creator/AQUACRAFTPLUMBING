@@ -716,6 +716,11 @@ a.rating-banner:hover, a.rating-banner:focus-visible {
   display: block;
   background: var(--off-white);
 }
+/* Full, uncropped photo (e.g. portrait shots) — shows the whole image at its natural aspect ratio */
+.svc-img--full {
+  aspect-ratio: auto;
+  object-fit: contain;
+}
 .svc-body .card-icon { margin-bottom: 12px; }
 @media (min-width: 800px) {
   .svc-row { grid-template-columns: 360px 1fr; gap: 32px; align-items: center; }
