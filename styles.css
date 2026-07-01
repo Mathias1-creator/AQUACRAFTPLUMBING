@@ -716,9 +716,9 @@ a.rating-banner:hover, a.rating-banner:focus-visible {
   display: block;
   background: var(--off-white);
 }
-/* Full, uncropped photo (e.g. portrait shots) — shows the whole image at its natural aspect ratio */
+/* Full, uncropped photo (e.g. portrait shots) — same box size as other rows, but the photo
+   shrinks to fit inside without cropping instead of filling/cropping the box. */
 .svc-img--full {
-  aspect-ratio: auto;
   object-fit: contain;
 }
 .svc-body .card-icon { margin-bottom: 12px; }
