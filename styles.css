@@ -421,6 +421,14 @@ a:hover { color: var(--red); }
 .svc-row .card-icon { margin-bottom: 0; }
 .svc-row h3 { margin-bottom: .3rem; }
 .svc-row p { margin: 0; }
+.svc-img-ph {
+  min-height: 220px; border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, var(--off-white), #e8eef6);
+  border: 2px dashed var(--line);
+  display: flex; align-items: center; justify-content: center;
+}
+.svc-img-ph svg { width: 56px; height: 56px; color: var(--red); opacity: .7; }
+.area-cities { font-size: .85rem !important; color: var(--ink-soft); margin-top: 4px !important; }
 
 /* ---------- Contact blocks ---------- */
 .contact-grid {
@@ -534,12 +542,22 @@ a:hover { color: var(--red); }
   padding: clamp(44px, 6vw, 64px) 0 36px;
 }
 .footer-logo { height: 96px; width: auto; margin-bottom: 16px; }
-.footer-brand p { font-size: .94rem; max-width: 320px; margin: 0; }
+.footer-brand p { font-size: .94rem; max-width: 320px; margin: 0 0 6px; }
+.footer-license { font-size: .82rem !important; color: var(--ink-soft) !important; }
+.footer-address { font-style: normal; font-size: .9rem; color: var(--ink-soft); line-height: 1.5; margin: 4px 0 8px !important; }
 .footer-col h3 { font-size: .95rem; text-transform: uppercase; letter-spacing: .1em; color: var(--navy); margin-bottom: 14px; }
 .footer-col p { margin: 0 0 10px; font-size: .96rem; }
 .footer-col a { color: var(--navy); font-weight: 600; }
 .footer-col a:hover { color: var(--red); }
 .footer-phone { font-size: 1.25rem; font-weight: 800; color: var(--navy) !important; }
+.footer-social { display: flex; flex-direction: column; gap: 10px; margin-top: 2px; }
+.social-link {
+  display: flex; align-items: center; gap: 10px;
+  font-size: .92rem; font-weight: 600; color: var(--navy);
+  text-decoration: none; transition: color .18s;
+}
+.social-link:hover { color: var(--red); }
+.social-icon { width: 22px; height: 22px; flex-shrink: 0; border-radius: 4px; }
 .footer-bottom { border-top: 1px solid var(--line); }
 .footer-bottom .container { padding-top: 20px; padding-bottom: 20px; }
 .footer-bottom p { margin: 0; font-size: .85rem; color: var(--ink-soft); }
