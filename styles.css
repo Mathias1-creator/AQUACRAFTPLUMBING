@@ -463,7 +463,7 @@ a:hover { color: var(--red); }
 .contact-card .num { font-size: clamp(1.6rem, 5vw, 2.1rem); font-weight: 800; color: var(--navy); letter-spacing: -.01em; }
 .contact-card .email-addr { font-size: clamp(.85rem, 2.5vw, 1rem); font-weight: 700; color: var(--navy); word-break: break-all; }
 .contact-card p { margin: 0; }
-.contact-card .btn { margin-top: 12px; }
+.contact-card .btn { margin-top: auto; }
 
 .info-grid {
   display: grid;
