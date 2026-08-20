@@ -362,6 +362,25 @@ a:hover { color: var(--red); }
 .quote .by { margin-top: auto; font-weight: 700; color: var(--navy); }
 .quote .src { font-weight: 500; color: var(--ink-soft); font-size: .9rem; }
 
+/* Owner's reply shown under a review (as it appears on Google) */
+.quote-reply {
+  margin-top: 14px;
+  padding: 13px 15px;
+  background: var(--off-white);
+  border-radius: 12px;
+  border-left: 3px solid var(--blue);
+}
+.quote-reply-by {
+  display: block;
+  font-size: .74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--ink-soft);
+  margin-bottom: 5px;
+}
+.quote-reply p { margin: 0; font-size: .9rem; line-height: 1.55; color: var(--ink-soft); }
+
 /* ---------- CTA band (navy / dark accent) ---------- */
 .cta-band {
   background:
