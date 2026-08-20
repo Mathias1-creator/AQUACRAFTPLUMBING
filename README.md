@@ -145,8 +145,8 @@ grep -rl 'EXAMPLE-DOMAIN.com' . | xargs sed -i '' 's/EXAMPLE-DOMAIN\.com/yourdom
   SVG icons, so there are no external image dependencies and nothing can appear
   broken on launch.
 - Company facts (3rd-generation, 15 years combined experience, locally born and
-  raised, established January 2026, licensed & bonded, backflow certified in
-  CA & NV, 5.0★ on Google with 7 reviews, Sonoma/Napa/Marin service area) are
+  raised, established January 2026, licensed, bonded & insured, backflow certified in
+  CA & NV, 5.0★ on Google with 9 reviews, Sonoma/Napa/Marin service area) are
   used exactly as provided — nothing was added or embellished.
 
 ---
